@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}BUSTRACK!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap-social.css')}}">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('styles/style0.css')}}">
+    </head>
+    <body class="container-fluid">
+        <div class="row">
+            <header class="col-sm-12" style="background-color:black; height: 150p;">
+               <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-sm-2" style="color:green;text-align: left;font-size: 56px;margin-top: 15px;">BUSTRACK</div>
+                            <div class="col-sm-5" ><img src=></div>
+                            <div class="col-sm-5"><img src="image/afrik.png" class="img-responsive"></div>
+                        </div>
+                    </div>
+               </div>
+                
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="background-color:#191818;height:54px;">
+                <div class="col-sm-10 col-sm-offset-1">
+                    
+        <!--DEBUT-->
+                     <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"></a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li> <a href="#">Qui sommes nous</a> </li>
+                                    <li> <a href="formation.php">TRACKER MON BUS</a> </li>
+                                    <li> <a href="formation.php">RECHERCHER MON BUS</a> </li>
+                                        <li> <a href="apprenants.php">BIENVENUE </a> </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Postulez <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">PROFIL</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#">DECONNEXION</a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                </li>
+                            
+                                <li> <a href="#">NOUS CONTACTER</a> </li>
+                            </ul>
+                                <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                        <input type="text" style="width:100px" class="input-sm formcontrol" placeholder="Recherche">
+                        <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span>
+                        
+                        </button>
+                        </span>
+                        </div>
+                        </form>
+                        </div>
+                     </nav>
+
+                </div>
+            </div>
+        </div>
+        
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+        <div class="row" style="background-color: black;text-align: center;height: auto;">
+        <div class="col-sm-4">
+            <div>
+                <h2>Liens utiles</h2>
+        </div>
+        <div class="col-sm-4">
+            <div>
+                <h2>Nos Partenaires</h2>
+            </div>
+        </div>  
+        <div class="col-sm-4">
+            <div>
+                <h2>Suivez-nous</h2>
+                    <a class="btn btn-social-icon btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter icon-white">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-pinterest">
+                        <span class="fa fa-pinterest"></span>
+                    </a>
+                    
+            </div><br>
+        </div>    
+        </div>
+    </body>
+</html>

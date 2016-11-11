@@ -1,0 +1,7 @@
+bustrack_user:
+    resource: "@BustrackUserBundle/Resources/config/routing.yml"
+    prefix:   /user/
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

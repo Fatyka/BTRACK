@@ -1,0 +1,9 @@
+bustrack_user_accueil:
+    path:     /
+    defaults: { _controller: BustrackUserBundle:User:index }
+bustrack_user_trouver:
+    path:     /trouver
+    defaults: { _controller: BustrackUserBundle:User:trouver }
+bustrack_user_oublier:
+    path:     /oublier
+    defaults: { _controller: BustrackUserBundle:User:oublier }
